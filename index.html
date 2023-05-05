@@ -51,10 +51,11 @@
                 Tarefas
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">APendentes</a></li>
+                <li><a class="dropdown-item" href="#">Pendentes</a></li>
                 <li><a class="dropdown-item" href="#">Concluidas</a></li>
                 <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" href="#">Cadastrar</a></li>
+                <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                  data-bs-target="#exampleModal">Cadastrar</a></li>
               </ul>
             </li>
           </ul>
@@ -82,84 +83,8 @@
     >
       Cadastrar Tarefa
     </button>
-      <div class="row mt-3">
-        <div class="col-lg-3 col-md-6 col-12">
-          <div class="card">
-            <div class="card-header">Estudar para o CP</div>
-            <div class="card-body">
-              <p class="card-text">Fazer os exercicios para estudar</p>
-              <p>
-                <span class="badge text-bg-danger">Estudos</span>
-              </p>
-              <a href="#" class="btn btn-success" title="marcar como concluida">
-                <i class="bi bi-check-lg"></i>
-              </a>
-              <a href="#" class="btn btn-danger" title="apagar tarefa">
-                <i class="bi bi-trash"></i>
-              </a>
-            </div>
-          </div>
-          <!--card-->
-        </div>
-        <!--col-->
+      <div id="tarefas" class="row mt-3">
 
-        <div class="col-lg-3 col-md-6 col-12">
-          <div class="card">
-            <div class="card-header">Estudar para o CP</div>
-            <div class="card-body">
-              <p class="card-text">Fazer os exercicios para estudar</p>
-              <p>
-                <span class="badge text-bg-danger">Estudos</span>
-              </p>
-              <a href="#" class="btn btn-success" title="marcar como concluida">
-                <i class="bi bi-check-lg"></i>
-              </a>
-              <a href="#" class="btn btn-danger" title="apagar tarefa">
-                <i class="bi bi-trash"></i>
-              </a>
-            </div>
-          </div>
-          <!--card-->
-        </div>
-        <!--col-->
-        <div class="col-lg-3 col-md-6 col-12">
-          <div class="card">
-            <div class="card-header">Estudar para o CP</div>
-            <div class="card-body">
-              <p class="card-text">Fazer os exercicios para estudar</p>
-              <p>
-                <span class="badge text-bg-danger">Estudos</span>
-              </p>
-              <a href="#" class="btn btn-success" title="marcar como concluida">
-                <i class="bi bi-check-lg"></i>
-              </a>
-              <a href="#" class="btn btn-danger" title="apagar tarefa">
-                <i class="bi bi-trash"></i>
-              </a>
-            </div>
-          </div>
-          <!--card-->
-        </div>
-        <!--col-->
-        <div class="col-lg-3 col-md-6 col-12">
-          <div class="card">
-            <div class="card-header">Estudar para o CP</div>
-            <div class="card-body">
-              <p class="card-text">Fazer os exercicios para estudar</p>
-              <p>
-                <span class="badge text-bg-danger">Estudos</span>
-              </p>
-              <a href="#" class="btn btn-success" title="marcar como concluida">
-                <i class="bi bi-check-lg"></i>
-              </a>
-              <a href="#" class="btn btn-danger" title="apagar tarefa">
-                <i class="bi bi-trash"></i>
-              </a>
-            </div>
-          </div>
-          <!--card-->
-        </div>
-        <!--col-->
       </div>
       <!--row-->
     </div>
@@ -190,13 +115,13 @@
             <form>
                 <div class="mb-3">
                   <label for="Titulo" class="form-label">Titulo</label>
-                  <input type="text" class="form-control" id="Titulo" aria-describedby="Titulo">
+                  <input type="text" class="form-control" id="titulo" aria-describedby="Titulo">
                 <div class="mb-3">
                   <label for="descricao" class="form-label">Descrição</label>
                   <input type="text" class="form-control" id="descricao">
                 </div>
                 <div class="mb-3">
-                    <select class="form-select" aria-label="Categoria">
+                    <select class="form-select" id="categoria" aria-label="categoria">
                         <option selected>Selecione uma categoria</option>
                         <option value="1">Estudos</option>
                         <option value="2">Trabalho</option>
@@ -214,7 +139,7 @@
             >
               Cancelar
             </button>
-            <button type="button" class="btn btn-primary">Salvar</button>
+            <button id="salvar" type="button" class="btn btn-primary">Salvar</button>
           </div>
         </div>
       </div>
@@ -224,5 +149,8 @@
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
+
+    <script src="./crud.js"></script>
+
   </body>
 </html>
